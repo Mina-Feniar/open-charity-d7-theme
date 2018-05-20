@@ -1,0 +1,66 @@
+#carousel-indicators {
+  .carousel-inner {
+    .slideWrap {
+      padding: 0 10px;
+      position: relative;
+      height: 160px;
+    }
+    img {
+      @include centerer;
+      text-align: center;
+      max-width: 150px;
+      max-height: 100px;
+    }
+  }
+  .carousel-indicators {
+    bottom: -40px;
+    height: 30px;
+    li {
+      background-color: #9698B0;
+      border-color: #9698B0;
+      width: 9px;
+      height: 9px;
+      margin: 0 5px;
+      &.active {
+        background-color: $puerto-rico;
+        border-color: $puerto-rico;
+      }
+    }
+  }
+}
+
+#carousel-arrows {
+  .carousel-control.left, .carousel-control.right {
+    background: none;
+    background-image: none;
+    opacity: 1;
+    height: 0;
+    @media (min-width: $media-breakpoint-lg) {
+      height: 100%;
+      width: 0;
+    }
+  }
+  .fa {
+    position: absolute;
+    color: $fountain-Blue;
+    font-size: 50px;
+    opacity: 1;
+    text-shadow: none;
+    top: -50px;
+    @media (min-width: $media-breakpoint-lg) {
+      top: 30%;
+    }
+    &.fa-angle-left {
+      left: 10px;
+      @media (min-width: $media-breakpoint-lg) {
+        left: -30px;
+      }
+    }
+    &.fa-angle-right {
+      right: 10px;
+      @media (min-width: $media-breakpoint-lg) {
+        right: -30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+#header {
+  #logo {
+    @media (min-width: $media-breakpoint-sm) {
+      float: left;
+    }
+    @media (min-width: $media-breakpoint-md) {
+      margin: 10px 0px;
+    }
+    img {
+      margin: 0 auto;
+      @media (min-width: $media-breakpoint-sm) {
+        margin: 0;
+      }
+      @media (min-width: $media-breakpoint-md) {
+        max-width: 158px;
+      }
+    }
+  }
+
+  #block-block-1 {
+    @media (min-width: $media-breakpoint-sm) {
+      float: right;
+    }
+    #join-us-link {
+      @extend .button-style-1;
+      margin-left: 0px;
+      @media (min-width: $media-breakpoint-sm) {
+        margin-left: 20px;
+       }
+      @media (min-width: $media-breakpoint-lg) {
+        margin-left: 35px;
+      }
+    }
+  }
+}

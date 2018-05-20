@@ -1,0 +1,46 @@
+.button-style-1 {
+  border: 1px solid $puerto-rico;
+  color: $puerto-rico;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: $museo-sans-700;
+  padding: 5px 25px;
+  @media (min-width: $media-breakpoint-sm)  {
+    padding: 12px 25px;
+  }
+  @media (min-width: $media-breakpoint-lg)  {
+    font-size: 14px;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.button-style-2 {
+  background-color: $fountain-Blue;
+  border: 1px solid #3ebfc1;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: $museo-sans-700;
+  margin-left: 0px;
+  padding: 10px 25px;
+  @media (min-width: $media-breakpoint-sm) {
+    margin-left: 20px;
+    padding: 12px 20px;
+  }
+  @media (min-width: $media-breakpoint-lg) {
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 35px;
+  }
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #90d3d5;
+  }
+}

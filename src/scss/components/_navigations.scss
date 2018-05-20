@@ -1,0 +1,65 @@
+/* Main Menu */
+
+#navigation {
+  h2 {
+    display: none;
+  }
+  #main-menu {
+    display: none;
+    @media (min-width: $media-breakpoint-md) {
+      float: right;
+      display: block;
+    }
+    li {
+      padding: 0;
+      display: block;
+      margin-bottom: 10px;
+      @media (min-width: $media-breakpoint-md) {
+        display: inline;
+        margin-bottom: 0;
+      }
+      a {
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: $dark-gray-2;
+        font-family: $museo-sans-700;
+        margin-left: 0;
+        @media (min-width: $media-breakpoint-md) {
+          margin-left: 20px;
+        }
+        @media (min-width: $media-breakpoint-lg) {
+          margin-left: 33px;
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
+}
+
+#humb-menu {
+  position: relative;
+  float: right;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 5px 0 0 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: none;
+  @media (min-width: $media-breakpoint-md) {
+    display: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover .rect {
+    background-color: #fcfc00;
+  }
+  .fa-bars {
+    font-size: 36px;
+    color: $dark-gray-2;
+  }
+}

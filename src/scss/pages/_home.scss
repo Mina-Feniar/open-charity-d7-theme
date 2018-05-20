@@ -1,0 +1,233 @@
+.node-type-homepage {
+  .hp-intro-section {
+    position: relative;
+    .hp-intro-img {
+      overflow: hidden;
+      max-height: 250px;
+      @media (min-width: $media-breakpoint-sm) {
+        max-height: 458px;
+      }
+    }
+    .hp-intro-description {
+      text-align: center;
+      color: $dark-gray-2;
+      padding: 0 15px;
+      @media (min-width: $media-breakpoint-sm) {
+        @include centerer;
+        color: #fff;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0;
+        * {
+          color: #fff;
+        }
+      }
+      .content {
+        max-width: 600px;
+      }
+      h1.hp-intro-title {
+        font-family: "Museo Sans 300";
+      }
+    }
+  }
+
+  .hp-event-section {
+    color: $dark-gray-3;
+    background-color: $light-gray-1;
+    font-size: 16px;
+    font-family: $museo-sans-700;
+    .event-register-link {
+      margin-top: 7px;
+    }
+    .next-event {
+      color: $fountain-Blue;
+    }
+    .location {
+      line-height: 25px;
+      color: $light-gray-2;
+      font-size: 14px;
+      margin: 0;
+      @media (min-width: $media-breakpoint-md) {
+        line-height: 35px;
+      }
+    }
+    .date-separator {
+      margin-right: 5px;
+    }
+  }
+
+  .hp-grid-sec {
+    .col {
+      margin: 0 0 30px 0;
+      @media (min-width: $media-breakpoint-sm) {
+        margin: 0 5px;
+      }
+      @media (min-width: $media-breakpoint-md) {
+        margin: 0 10px;
+      }
+      @media (min-width: $media-breakpoint-lg) {
+        margin: 0 40px;
+      }
+    }
+    .img-wrap {
+      position: relative;
+      @media (min-width: $media-breakpoint-sm) {
+        height: 140px;
+      }
+      @media (min-width: $media-breakpoint-lg) {
+        height: 170px;
+      }
+      img {
+        max-width: 175px;
+        @media (min-width: $media-breakpoint-sm) {
+          @include centerer;
+          max-width: 130px;
+          max-height: 110px;
+        }
+      }
+    }
+    h4 {
+      margin: 10px auto 0 auto;
+      font-family: $museo-sans-700;
+      @media (min-width: $media-breakpoint-sm) {
+        margin: 10px auto;
+      }
+      @media (min-width: $media-breakpoint-lg) {
+        margin: 0 auto 15px 0;
+      }
+    }
+    p {
+      margin: 0 0 15px 0;
+      @media (min-width: $media-breakpoint-sm) {
+        margin: 15px 0 0 0;
+      }
+      @media (min-width: $media-breakpoint-sm) and (max-width: $media-breakpoint-lg) {
+        min-height: 66px;
+      }
+    }
+
+    .button {
+      margin: 0;
+      display: inline-block;
+      padding: 12px;
+      @media (min-width: $media-breakpoint-sm) {
+        margin: 15px auto 20px auto;
+      }
+      @media (min-width: $media-breakpoint-lg) {
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+    }
+  }
+
+  .hp-our-mission {
+    background-color: $light-gray-1;
+    .description {
+      margin-bottom: 70px;
+      h4 {
+        margin: 15px 0;
+      }
+      h5 {
+        margin: 5px 0;
+      }
+    }
+    .content {
+      margin-bottom: 30px;
+      > .last .col {
+        margin: 0;
+      }
+      .col {
+        position: relative;
+        background-color: #fff;
+        margin: 0 10px 60px 10px;
+        padding: 40px 10px 20px 10px;
+        @media (min-width: $media-breakpoint-md) {
+          margin: 0 10px;
+          &.first {
+            margin: 0 20px 0 0;
+          }
+          &.last {
+            margin: 0 0 0 20px;
+          }
+        }
+        @media (min-width: $media-breakpoint-md) and (max-width: $media-breakpoint-xl) {
+          min-height: 160px;
+        }
+        @media (min-width: $media-breakpoint-lg) {
+          padding: 40px 20px 20px 20px;
+        }
+        h4 {
+          color: $turquoise;
+          margin-bottom: 0;
+          font-family: $museo-sans-700;
+          @media (min-width: $media-breakpoint-md) {
+            margin-bottom: 22px;
+          }
+        }
+        h5 {
+          margin-top: 0;
+          max-width: 300px;
+          @media (min-width: $media-breakpoint-md) {
+            margin-top: 25px;
+            max-width: 100%;
+          }
+        }
+        .img-wrap {
+          position: absolute;
+          max-width: 80px;
+          top: -40px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          border: 10px solid #fff;
+          @include round;
+        }
+      }
+    }
+
+  }
+
+  .hp-members-sec {
+    background-color: $light-gray-1;
+    padding-bottom: 40px;
+    .wrapper {
+      border-top: 1px solid #d8d8dc;
+    }
+  }
+
+  .hp-blog-sec {
+    h4 {
+      color: $turquoise;
+      font-family: $museo-sans-700;
+      margin: 0;
+      font-size: 16px;
+      @media (min-width: $media-breakpoint-md) {
+      }
+    }
+    h5.description {
+      border-top: 1px solid $light-gray-1;
+      border-bottom: 1px solid $light-gray-1;
+      margin: 0;
+      padding: 20px 0 25px 0;
+      min-height: 50px;
+      @media (min-width: $media-breakpoint-sm) {
+        min-height: 88px;
+      }
+    }
+    h5.date {
+      margin: 20px 0 10px 0;
+      font-size: 14px;
+    }
+    .col {
+      padding: 0 15px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+
