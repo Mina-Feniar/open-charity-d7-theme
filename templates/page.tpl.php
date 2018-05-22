@@ -128,11 +128,6 @@
 
     </div></div> <!-- /.section, /#header -->
 
-
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-    <?php endif; ?>
-
     <div class="container">
       <?php print $messages; ?>
     </div>

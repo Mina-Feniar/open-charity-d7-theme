@@ -82,7 +82,9 @@
           <div class="sm-col-12 sm-col-4 pull-left text-center">
             <div class="col">
               <div class="img-wrap">
-                <img alt="<?php print $data->field_get_involved_title[LANGUAGE_NONE][0]['value']; ?>" class="img-responsive m-auto" src="<?php print file_create_url($data->field_get_involved_image[LANGUAGE_NONE][0]['uri']); ?>" alt="<?php print $node->field_grid_section_title[LANGUAGE_NONE][0]['value']; ?>" />
+                <a href="<?php print $data->field_get_involved_cta[LANGUAGE_NONE][0]['url']; ?>">
+                  <img alt="<?php print $data->field_get_involved_title[LANGUAGE_NONE][0]['value']; ?>" class="img-responsive m-auto" src="<?php print file_create_url($data->field_get_involved_image[LANGUAGE_NONE][0]['uri']); ?>" alt="<?php print $node->field_grid_section_title[LANGUAGE_NONE][0]['value']; ?>" />
+                </a>
               </div>
               <h4 class="uppercase"><?php print $data->field_get_involved_title[LANGUAGE_NONE][0]['value']; ?></h4>
               <p><?php print $data->field_get_involved_description[LANGUAGE_NONE][0]['value']; ?></p>
@@ -141,7 +143,7 @@
   <div class="hp-members-sec">
     <div class="container">
       <div class="wrapper clearfix">
-        <h3 class="text-center uppercase">Our Members</h3>
+        <h3 class="text-center uppercase"><?php print $node->field_hp_our_members_title[LANGUAGE_NONE][0]['value']; ?></h3>
         <div id="carousel-indicators" class="carousel-type-1 carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators"></ol>
@@ -156,7 +158,7 @@
   <div class="hp-blog-sec">
     <div class="container">
       <div class="wrapper clearfix">
-        <h3 class="text-center uppercase">Blog</h3>
+        <h3 class="text-center uppercase"><?php print $node->field_hp_blog_title[LANGUAGE_NONE][0]['value']; ?></h3>
         <div id="carousel-arrows" class="carousel-type-2 carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox"></div>
           <!-- Controllers --->
@@ -193,7 +195,7 @@
   foreach ($node->field_hp_blogs[LANGUAGE_NONE] as $blog) {
     ?>
     <div class="single-blog-post" id="blog-post-<?php print $c; ?>">
-      <h4><?php print substr($blog['node']->title, 0, 25) . '...'; ?></h4>
+      <h4><a href="<?php print url('node/' . $blog['node']->nid); ?>"><?php print substr($blog['node']->title, 0, 25) . '...'; ?></a></h4>
       <h5 class="description"><?php print substr(strip_tags($blog['node']->body[LANGUAGE_NONE][0]['value']), 0, 120); ?></h5>
       <h5 class="date"><?php print date("j M Y", $blog['node']->created); ?></h5>
     </div>

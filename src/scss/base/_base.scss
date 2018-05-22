@@ -15,6 +15,17 @@
     padding: 35px 30px;
   }
 }
+.page-user #main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  #block-system-main {
+    padding: 15px;
+    @media (min-width: $media-breakpoint-lg) {
+      padding: 20px 30px;
+    }
+  }
+}
 .sm-show, .md-show {
   display: block;
 }

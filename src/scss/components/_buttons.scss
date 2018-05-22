@@ -1,6 +1,7 @@
 .button-style-1 {
-  border: 1px solid $puerto-rico;
   color: $puerto-rico;
+  background-color: #fff;
+  border: 1px solid $puerto-rico;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
@@ -13,12 +14,14 @@
   @media (min-width: $media-breakpoint-lg)  {
     font-size: 14px;
   }
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
+    background-color: $puerto-rico;
+    color: #fff;
   }
 }
 
-.button-style-2 {
+.button-style-2, input.form-submit {
   background-color: $fountain-Blue;
   border: 1px solid #3ebfc1;
   color: #fff;
@@ -30,17 +33,24 @@
   margin-left: 0px;
   padding: 10px 25px;
   @media (min-width: $media-breakpoint-sm) {
-    margin-left: 20px;
     padding: 12px 20px;
   }
   @media (min-width: $media-breakpoint-lg) {
     font-size: 14px;
     line-height: 14px;
-    margin-left: 35px;
   }
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
     color: #fff;
     background-color: #90d3d5;
+  }
+}
+
+.button-style-2 {
+  @media (min-width: $media-breakpoint-sm) {
+    margin-left: 20px;
+  }
+  @media (min-width: $media-breakpoint-lg) {
+    margin-left: 35px;
   }
 }
